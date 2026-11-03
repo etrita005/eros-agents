@@ -9,8 +9,7 @@ This document defines the intended long-term EROS system composition, the single
 responsibility of each composition area, the boundaries between adjacent areas,
 and the platform portability contract. This document defines intended composition
 and scope. It is not implementation, test, deployment, or robot-system acceptance
-evidence. It does not define APIs, message fields, interface signatures, or
-implementation designs.
+evidence. It does not define APIs, message fields, interface signatures, or implementation designs.
 
 ## System Composition
 
