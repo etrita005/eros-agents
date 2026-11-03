@@ -71,6 +71,7 @@ anti-features. -->
   through the `.planning/` symlink.
 - Forge's controlled environment is Linux/amd64 with Docker and a locked local
   image. Cross-compilation or packaging does not establish target deployment.
+- The authoritative system composition and portability baseline is `.planning/SCOPE.md`; this document records project-level status rather than duplicating that baseline.
 
 ## Constraints
 
@@ -93,6 +94,7 @@ anti-features. -->
 | Keep Forge as a subproject, not the EROS roadmap | Forge is build and delivery infrastructure, not the whole robot operating system | — Pending |
 | Limit this baseline to scope and traceability | The workspace has no implemented robot runtime or target hardware evidence | — Pending |
 | Keep planning artifacts in `agents/planning/` | `.planning/` is owned by the `agents` repository and shared by workspace tooling | — Pending |
+| Keep the scope baseline in `agents/planning/SCOPE.md` | One authoritative composition baseline avoids divergent copies in `PROJECT.md`, `REQUIREMENTS.md`, and `ROADMAP.md` | — Pending |
 
 ## Evolution
 

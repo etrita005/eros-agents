@@ -6,6 +6,7 @@
 ## v1 Requirements
 
 Requirements for the initial scope baseline. Each maps to a roadmap phase.
+System composition and portability detail is defined in `.planning/SCOPE.md`.
 
 ### Scope
 

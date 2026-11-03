@@ -22,6 +22,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Goal:** Readers can see the long-term EROS system composition, the responsibility of each area, and the platform portability contract in the baseline documents.
 **Depends on:** Nothing (first phase)
 **Requirements:** SCOPE-01, SCOPE-04
+**Scope baseline:** `.planning/SCOPE.md`
 **Success Criteria** (what must be TRUE):
   1. Every long-term composition area of EROS is listed with exactly one stated responsibility, and no listed area lacks an assigned responsibility.
   2. The composition distinguishes EROS system areas from build and delivery infrastructure, so a reader can identify Forge's role without treating Forge as the whole operating system.
