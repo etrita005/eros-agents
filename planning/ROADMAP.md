@@ -33,7 +33,6 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 ### Phase 2: Implemented Scope and Explicit Exclusions
 **Goal:** Readers can distinguish Forge's implemented capabilities from unimplemented EROS system scope, and the baseline's exclusions are explicit and reasoned.
-**Mode:** mvp
 **Depends on:** Phase 1
 **Requirements:** SCOPE-02, SCOPE-03
 **Success Criteria** (what must be TRUE):
@@ -41,7 +40,8 @@ Decimal phases appear between their surrounding integers in numeric order.
   2. The baseline states which EROS system areas have no implementation in this workspace, without presenting them as delivered.
   3. Every excluded area — runtime, BSP and hardware support, firmware, CI/CD, deployment, and target acceptance — appears in an explicit exclusion list with a reason.
   4. No excluded capability is described as delivered or accepted in the baseline documents.
-**Plans**: TBD
+**Plans**: 1 plan
+- [ ] `02-01-PLAN.md` — Add the Forge capability inventory and explicit exclusion table to SCOPE.md
 
 ### Phase 3: Baseline Traceability and Consistency Review
 **Goal:** The baseline is fully traceable and internally consistent, with every unresolved item recorded and dispositioned.
@@ -64,5 +64,5 @@ Phases execute in numeric order: 1 → 2 → 3
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. System Composition and Portability Boundary | 1/1 | Complete    | 2026-11-04 |
-| 2. Implemented Scope and Explicit Exclusions | 0/TBD | Not started | - |
+| 2. Implemented Scope and Explicit Exclusions | 0/1 | Ready to execute | - |
 | 3. Baseline Traceability and Consistency Review | 0/TBD | Not started | - |
