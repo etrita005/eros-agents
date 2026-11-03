@@ -10,10 +10,10 @@ System composition and portability detail is defined in `.planning/SCOPE.md`.
 
 ### Scope
 
-- [ ] **SCOPE-01**: Define the long-term EROS system composition and the responsibility of each composition area.
+- [x] **SCOPE-01**: Define the long-term EROS system composition and the responsibility of each composition area.
 - [ ] **SCOPE-02**: Define Forge's implemented capabilities and boundaries separately from unimplemented EROS system scope.
 - [ ] **SCOPE-03**: Record explicit exclusions for this baseline so future runtime, hardware, firmware, and CI/CD work is not presented as delivered.
-- [ ] **SCOPE-04**: Define the portability boundary: common source and APIs where practical, platform-specific builds where required, and no guarantee of identical binaries across platforms.
+- [x] **SCOPE-04**: Define the portability boundary: common source and APIs where practical, platform-specific builds where required, and no guarantee of identical binaries across platforms.
 
 ### Baseline Review
 
@@ -60,10 +60,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| SCOPE-01 | Phase 1 | Pending |
+| SCOPE-01 | Phase 1 | Complete |
 | SCOPE-02 | Phase 2 | Pending |
 | SCOPE-03 | Phase 2 | Pending |
-| SCOPE-04 | Phase 1 | Pending |
+| SCOPE-04 | Phase 1 | Complete |
 | TRACE-01 | Phase 3 | Pending |
 | REVIEW-01 | Phase 3 | Pending |
 

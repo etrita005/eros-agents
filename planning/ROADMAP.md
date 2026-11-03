@@ -28,8 +28,8 @@ Decimal phases appear between their surrounding integers in numeric order.
   2. The composition distinguishes EROS system areas from build and delivery infrastructure, so a reader can identify Forge's role without treating Forge as the whole operating system.
   3. The portability rule is recorded for platform-sensitive areas: common source and APIs where practical, platform-specific builds where required.
   4. The documents state explicitly that identical binaries are not guaranteed across platforms.
-**Plans**: 1 plan
-- [ ] `01-01-PLAN.md` — Create the scope baseline and link it from PROJECT.md, REQUIREMENTS.md, and ROADMAP.md
+**Plans**: 1/1 plans executed
+- [x] `01-01-PLAN.md` — Create the scope baseline and link it from PROJECT.md, REQUIREMENTS.md, and ROADMAP.md
 
 ### Phase 2: Implemented Scope and Explicit Exclusions
 **Goal:** Readers can distinguish Forge's implemented capabilities from unimplemented EROS system scope, and the baseline's exclusions are explicit and reasoned.
@@ -63,6 +63,6 @@ Phases execute in numeric order: 1 → 2 → 3
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. System Composition and Portability Boundary | 0/1 | Ready to execute | - |
+| 1. System Composition and Portability Boundary | 1/1 | In Progress | - |
 | 2. Implemented Scope and Explicit Exclusions | 0/TBD | Not started | - |
 | 3. Baseline Traceability and Consistency Review | 0/TBD | Not started | - |
