@@ -59,18 +59,18 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| SCOPE-01 | — | Pending |
-| SCOPE-02 | — | Pending |
-| SCOPE-03 | — | Pending |
-| SCOPE-04 | — | Pending |
-| TRACE-01 | — | Pending |
-| REVIEW-01 | — | Pending |
+| SCOPE-01 | Phase 1 | Pending |
+| SCOPE-02 | Phase 2 | Pending |
+| SCOPE-03 | Phase 2 | Pending |
+| SCOPE-04 | Phase 1 | Pending |
+| TRACE-01 | Phase 3 | Pending |
+| REVIEW-01 | Phase 3 | Pending |
 
 **Coverage:**
 - v1 requirements: 6 total
-- Mapped to phases: 0
-- Unmapped: 6 ⚠️
+- Mapped to phases: 6
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-11-03*
-*Last updated: 2026-11-03 after initial definition*
+*Last updated: 2026-11-03 after roadmap creation*
