@@ -29,11 +29,14 @@ subproject capabilities, not EROS system-level acceptance. -->
   and BLOCKED results — existing.
 - ✓ EROS repositories are organized by a `repo` manifest with per-repository
   branches — existing.
+- ✓ Defined the long-term EROS system composition and the responsibility of each
+  composition area; see `.planning/SCOPE.md` — Phase 1.
+- ✓ Defined the portability boundary: common source and public APIs where
+  practical, platform-specific builds where required, and no guarantee of
+  identical binaries across platforms; see `.planning/SCOPE.md` — Phase 1.
 
 ### Active
 
-- [ ] **SCOPE-01**: Define the long-term EROS system composition and the
-  responsibility of each composition area.
 - [ ] **SCOPE-02**: Define subproject boundaries, including which capabilities
   are implemented by Forge and which remain future system scope.
 - [ ] **SCOPE-03**: Record explicit exclusions for this baseline so planned
@@ -114,4 +117,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-11-03 after initialization*
+*Last updated: 2026-11-03 after Phase 1*
