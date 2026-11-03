@@ -70,6 +70,24 @@ This table records implementation presence, not test success, deployment, or tar
 | Debian and symbol packaging | Debian payload assembly, split-configuration multiarch, paired dbgsym, external manifests | FR-09, FR-11, FR-16, FR-17; NFR-01 | `forge/bazel/deb.bzl`, `forge/bazel/packaging/driver.py`, `forge/bazel/toolchain/export_runtime.sh`; `forge/documents/deb-packaging.md` §Debug And Test Archives | Debian payloads are produced locally; target install/uninstall, target execution, and symbol use on a target are not verified. |
 | Acceptance and verification tooling | registered acceptance cases, separate result-state reporting, unit and driver tests, environment checks | FR-14, FR-17, FR-19; NFR-03 | `forge/tests/test_runner.py`, `forge/tests/acceptance_cases.py`, `forge/bazel/toolchain/environment_test.py`, `forge/bazel/packaging/driver_test.py`; `forge/documents/test-design.md` §1, `forge/tests/README.md` §Results And Evidence | Acceptance registry coverage is incomplete: `TC-ENV-05`-`TC-ENV-07`, `TC-ENTRY-01`-`TC-ENTRY-05`, and `TC-CI-03` are not fully registered. Complete CI acceptance and target execution are not established. `--all --strict` is not by itself proof of complete release acceptance. |
 
+## Explicit Exclusions
+
+The following EROS system capabilities are excluded from this milestone baseline. Status describes scope, not an acceptance-runner result.
+
+| Excluded capability | Area | Status | Reason | Exit criterion |
+|---------------------|------|--------|--------|----------------|
+| Robot runtime and system services implementation | Robot runtime and system services | Not implemented | No runtime source exists in this workspace; the area is defined only as intended composition. | An approved runtime implementation exists with implementation evidence and its own acceptance scope. |
+| Application framework, component model, lifecycle, and package model | Robot runtime and system services | Not implemented | The application framework is assigned to the runtime area in the composition, but no framework, component model, lifecycle, or package-model implementation exists in this workspace. | An approved application-framework implementation exists with a defined component and package model and its own acceptance scope. |
+| Linux BSP and hardware support | Linux BSP | Not selected | No target compute board or supported Linux boot chain is selected, and the workspace contains no BSP source or hardware enablement. | A target board is selected with an approved BSP, boot chain, and hardware-enablement evidence. |
+| Zephyr-based embedded board firmware | Embedded board firmware | Not selected | No external embedded board or Zephyr firmware project is selected, and the workspace contains no firmware source. | A target embedded board is selected with implemented Zephyr firmware and board-level evidence. |
+| CI/CD pipeline and orchestration implementation | CI/CD | Not implemented | The workspace contains no pipeline configuration, orchestration service, or automated release infrastructure; the area is defined only as intended composition. | An approved CI/CD pipeline exists that consumes Forge outputs and records its own execution evidence. |
+| Deployment and rollback automation | CI/CD | Not implemented | No deployment, rollback, or target-release automation exists in this workspace. | Approved deployment and rollback automation exists with target execution evidence. |
+| Target hardware selection | Cross-cutting | Not selected | No production or development target platform has been chosen; Linux/amd64 and ARM64 remain examples, not selections. | A target platform is approved and recorded with its platform, ABI, and support boundary. |
+| Target ABI, deployment, and robot-system acceptance | Cross-cutting | Not verified | Local builds, cross-compilation, and ELF inspection do not establish target ABI agreement, deployment, or robot-system acceptance, and no target execution evidence exists. | Target execution evidence exists for a matching target SDK and runtime, covering ABI, deployment, and robot-system acceptance. |
+| System update / OTA design and implementation | Cross-cutting | Deferred | Update orchestration, boot-slot ownership, and firmware recovery are deferred to v2 and are not assigned in this baseline. | An approved update/OTA design exists with assigned ownership across runtime, BSP, and firmware, plus implementation and acceptance evidence. |
+
+These are milestone-level exclusions, not permanent non-goals. They do not redefine the long-term composition in the sections above.
+
 ## Documentation Boundary
 
 - `documents/` is the outward-facing project documentation repository for architecture introductions, core-technology explanations, and similar material; it is not the planning baseline.
