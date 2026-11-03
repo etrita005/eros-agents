@@ -1,7 +1,7 @@
 # EROS Scope Baseline
 
 **Defined:** 2026-11-03
-**Last updated:** 2026-11-03
+**Last updated:** 2026-11-04
 
 ## Purpose
 
@@ -55,6 +55,21 @@ All five areas are peers within their layer; layer membership is organizational,
 | Build model | Identical binaries are not guaranteed across platforms; each platform is rebuilt for its target. No additional cross-version ABI compatibility is promised. | Identical binaries across platforms; additional cross-version ABI compatibility. |
 | Named examples | Linux/amd64 is the current development-host example; ARM64 is a candidate target example. | A support commitment or hardware selection. |
 
+## Implemented Forge Capabilities
+
+This table records implementation presence, not test success, deployment, or target acceptance. Evidence cites a repository-relative code path and the authoritative Forge document that defines or describes the mechanism; a design document, recipe, example, or unexecuted check is not a passing result.
+
+| Capability group | Implemented sub-capabilities | Forge requirement refs | Evidence | Implementation boundary / not covered |
+|------------------|------------------------------|------------------------|----------|---------------------------------------|
+| Controlled build environment and entry | persistent locked container, host launcher passthrough, image and mount validation, environment verification | FR-01, FR-19, FR-20; NFR-02, NFR-04 | `forge/forge_container.py`, `forge/docker/verify_environment.py`; `forge/README.md` §Environment And Setup, `forge/documents/requirements.md` §3.1 | Local entry and build flow are Linux/amd64 only. ARM64 native execution and a validated ARM64 launcher baseline are not established. |
+| Bazel orchestration and toolchain | module composition, tool identity capture, variant normalization, generated toolchain files | FR-02, FR-10, FR-19; NFR-01 | `forge/MODULE.bazel`, `forge/bazel/bazelrc`, `forge/bazel/toolchain/host_tools.bzl`; `forge/documents/technical-design.md` §2-§3 | Four presets are defined, but registry multi-architecture images and remote-cache evidence are not established. |
+| Native C++ build path | native C++ rules, runtime and debug providers, strict exported outputs | FR-05, FR-15; NFR-01 | `forge/bazel/runtime.bzl`; `forge/documents/technical-design.md` §6 | Build and ELF evidence only; a matching target SDK and target execution are not established, so target ABI and deployment acceptance are not claimed. |
+| Foreign CMake integration | foreign_cc overlay, install-tree adaptation, strict export validation | FR-05, FR-10, FR-15, FR-18 | `forge/bazel/cmake_forge.bzl`; `forge/documents/cmake-forge.md` §Install And Export | Build and ELF evidence only; a matching target SDK and target execution are not established, so target ABI and deployment acceptance are not claimed. |
+| Locked Conan + CMake integration | single-action Conan and CMake, lockfile enforcement, original-package verification, provenance manifests | FR-03, FR-04, FR-10, FR-18; NFR-02 | `forge/bazel/cmake_conan_forge.bzl`, `forge/bazel/tools/cmake_action.py`, `forge/bazel/tools/conan_action.py`; `forge/documents/cmake-conan-forge.md` §Action And Final Outputs | Build and ELF evidence only; a matching target SDK and target execution are not established, so target ABI and deployment acceptance are not claimed. |
+| Runtime closure | runfiles selection, transitive closure, plugin and resource roots, ownership mappings | FR-06, FR-07, FR-13, FR-15 | `forge/bazel/runtime.bzl`, `forge/bazel/deb.bzl`, `forge/bazel/packaging/driver.py`; `forge/documents/technical-design.md` §6 | Closure computation is implemented, but target install, target execution, and robot-system acceptance are not verified. |
+| Debian and symbol packaging | Debian payload assembly, split-configuration multiarch, paired dbgsym, external manifests | FR-09, FR-11, FR-16, FR-17; NFR-01 | `forge/bazel/deb.bzl`, `forge/bazel/packaging/driver.py`, `forge/bazel/toolchain/export_runtime.sh`; `forge/documents/deb-packaging.md` §Debug And Test Archives | Debian payloads are produced locally; target install/uninstall, target execution, and symbol use on a target are not verified. |
+| Acceptance and verification tooling | registered acceptance cases, separate result-state reporting, unit and driver tests, environment checks | FR-14, FR-17, FR-19; NFR-03 | `forge/tests/test_runner.py`, `forge/tests/acceptance_cases.py`, `forge/bazel/toolchain/environment_test.py`, `forge/bazel/packaging/driver_test.py`; `forge/documents/test-design.md` §1, `forge/tests/README.md` §Results And Evidence | Acceptance registry coverage is incomplete: `TC-ENV-05`-`TC-ENV-07`, `TC-ENTRY-01`-`TC-ENTRY-05`, and `TC-CI-03` are not fully registered. Complete CI acceptance and target execution are not established. `--all --strict` is not by itself proof of complete release acceptance. |
+
 ## Documentation Boundary
 
 - `documents/` is the outward-facing project documentation repository for architecture introductions, core-technology explanations, and similar material; it is not the planning baseline.
@@ -69,4 +84,4 @@ All five areas are peers within their layer; layer membership is organizational,
 ---
 
 *Scope baseline defined: 2026-11-03*
-*Last updated: 2026-11-03*
+*Last updated: 2026-11-04*
