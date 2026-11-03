@@ -1,0 +1,28 @@
+{
+  "contract": "1.0.0",
+  "flavor": "core",
+  "milestone": null,
+  "phases": [
+    {
+      "number": "1",
+      "name": "System Composition and Portability Boundary",
+      "status": "pending"
+    },
+    {
+      "number": "2",
+      "name": "Implemented Scope and Explicit Exclusions",
+      "status": "pending"
+    },
+    {
+      "number": "3",
+      "name": "Baseline Traceability and Consistency Review",
+      "status": "pending"
+    }
+  ],
+  "next": {
+    "command": "/gsd-progress --next",
+    "label": "Advance to the next step",
+    "reason": "Phase 1 of 3 · 0% · executing"
+  },
+  "updated_at": "2026-11-03T16:17:01.849Z"
+}
