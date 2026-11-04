@@ -13,7 +13,7 @@ This milestone turns project intent into a bounded, traceable scope baseline. Ph
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: System Composition and Portability Boundary** - Define the long-term system composition, area responsibilities, and the portability contract. (completed 2026-11-04)
-- [ ] **Phase 2: Implemented Scope and Explicit Exclusions** - Separate Forge's implemented capabilities from future system scope and record baseline exclusions.
+- [x] **Phase 2: Implemented Scope and Explicit Exclusions** - Separate Forge's implemented capabilities from future system scope and record baseline exclusions. (completed 2026-11-04)
 - [ ] **Phase 3: Baseline Traceability and Consistency Review** - Map every requirement to a phase with evidence status and complete the cross-document review.
 
 ## Phase Details
@@ -40,7 +40,7 @@ Decimal phases appear between their surrounding integers in numeric order.
   2. The baseline states which EROS system areas have no implementation in this workspace, without presenting them as delivered.
   3. Every excluded area — runtime, BSP and hardware support, firmware, CI/CD, deployment, and target acceptance — appears in an explicit exclusion list with a reason.
   4. No excluded capability is described as delivered or accepted in the baseline documents.
-**Plans**: 1/1 plans executed
+**Plans**: 1/1 plans complete
 - [x] `02-01-PLAN.md` — Add the Forge capability inventory and explicit exclusion table to SCOPE.md
 
 ### Phase 3: Baseline Traceability and Consistency Review
@@ -64,5 +64,5 @@ Phases execute in numeric order: 1 → 2 → 3
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. System Composition and Portability Boundary | 1/1 | Complete    | 2026-11-04 |
-| 2. Implemented Scope and Explicit Exclusions | 1/1 | In Progress | - |
+| 2. Implemented Scope and Explicit Exclusions | 1/1 | Complete    | 2026-11-04 |
 | 3. Baseline Traceability and Consistency Review | 0/TBD | Not started | - |
