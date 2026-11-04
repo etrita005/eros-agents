@@ -45,7 +45,6 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 ### Phase 3: Baseline Traceability and Consistency Review
 **Goal:** The baseline is fully traceable and internally consistent, with every unresolved item recorded and dispositioned.
-**Mode:** mvp
 **Depends on:** Phase 2
 **Requirements:** TRACE-01, REVIEW-01
 **Success Criteria** (what must be TRUE):
@@ -54,7 +53,8 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. A recorded review covers PROJECT.md, REQUIREMENTS.md, and ROADMAP.md and lists every inconsistency found or states that none were found.
   4. Every unresolved item from the review is recorded with a disposition, and no item is left without a next action or deferral decision.
   5. The three documents agree on scope statements, requirement identifiers, and phase assignments after review, or every remaining disagreement is recorded as unresolved.
-**Plans**: TBD
+**Plans**: 1 plan
+- [ ] `03-01-PLAN.md` — Establish the seven-column v1 traceability chain and complete the four-document baseline consistency review
 
 ## Progress
 
@@ -65,4 +65,4 @@ Phases execute in numeric order: 1 → 2 → 3
 |-------|----------------|--------|-----------|
 | 1. System Composition and Portability Boundary | 1/1 | Complete    | 2026-11-04 |
 | 2. Implemented Scope and Explicit Exclusions | 1/1 | Complete    | 2026-11-04 |
-| 3. Baseline Traceability and Consistency Review | 0/TBD | Not started | - |
+| 3. Baseline Traceability and Consistency Review | 0/1 | Not started | - |
