@@ -30,20 +30,20 @@ subproject capabilities, not EROS system-level acceptance. -->
 - ✓ EROS repositories are organized by a `repo` manifest with per-repository
   branches — existing.
 - ✓ Defined the long-term EROS system composition and the responsibility of each
-  composition area; see `.planning/SCOPE.md` — Phase 1.
+  composition area; see `.planning/SCOPE.md` — v1.0.
 - ✓ Defined the portability boundary: common source and public APIs where
   practical, platform-specific builds where required, and no guarantee of
-  identical binaries across platforms; see `.planning/SCOPE.md` — Phase 1.
+  identical binaries across platforms; see `.planning/SCOPE.md` — v1.0.
 - ✓ Inventoried Forge's implemented capabilities with FR/NFR references,
   code-plus-document evidence, and explicit implementation boundaries; see
-  `.planning/SCOPE.md` — Phase 2.
+  `.planning/SCOPE.md` — v1.0.
 - ✓ Recorded explicit EROS-scope exclusions with status, reason, and exit
-  criterion; see `.planning/SCOPE.md` — Phase 2.
+  criterion; see `.planning/SCOPE.md` — v1.0.
 - ✓ Established requirement-to-phase traceability with the full evidence chain
-  in `.planning/REQUIREMENTS.md` — Phase 3.
+  in the archived v1.0 requirements — v1.0.
 - ✓ Reviewed the baseline planning documents, dispositioned every finding in
-  `.planning/phases/03-baseline-traceability-and-consistency-review/03-REVIEW.md`,
-  and recorded prior-verification impact — Phase 3.
+  `.planning/milestones/v1.0-phases/03-baseline-traceability-and-consistency-review/03-REVIEW.md`,
+  and recorded prior-verification impact — v1.0.
 
 ### Active
 
@@ -81,6 +81,19 @@ anti-features. -->
   image. Cross-compilation or packaging does not establish target deployment.
 - The authoritative system composition and portability baseline is `.planning/SCOPE.md`; this document records project-level status rather than duplicating that baseline.
 
+## Current State
+
+- v1.0 Scope Baseline shipped 2026-11-04: 3 phases, 3 plans, and 6/6 v1 requirements verified.
+- The planning baseline is authoritative in `.planning/SCOPE.md`; the v1.0 traceability and requirements are archived with the milestone.
+- Forge remains the only substantial implementation. No robot runtime, BSP, firmware, CI/CD, deployment, or target acceptance exists.
+- Known tech debt: OTA deferral propagation, REVIEW-01 three/four-document wording, and manual-only Nyquist coverage for all three phases.
+
+## Next Milestone Goals
+
+- Define the next milestone scope and requirements before implementation.
+- Address the recorded tech debt where it affects the next scope.
+- Do not treat runtime, BSP, firmware, OTA, or CI/CD as delivered until planned, implemented, and verified.
+
 ## Constraints
 
 - **Repository structure**: EROS uses `repo` to manage independent repositories;
@@ -98,11 +111,15 @@ anti-features. -->
 
 | Decision | Rationale | Outcome |
 |----------|-----------|---------|
-| Initialize GSD at the EROS workspace root | Cross-repository scope and subproject boundaries need one project-level baseline | — Pending |
-| Keep Forge as a subproject, not the EROS roadmap | Forge is build and delivery infrastructure, not the whole robot operating system | — Pending |
-| Limit this baseline to scope and traceability | The workspace has no implemented robot runtime or target hardware evidence | — Pending |
-| Keep planning artifacts in `agents/planning/` | `.planning/` is owned by the `agents` repository and shared by workspace tooling | — Pending |
-| Keep the scope baseline in `agents/planning/SCOPE.md` | One authoritative composition baseline avoids divergent copies in `PROJECT.md`, `REQUIREMENTS.md`, and `ROADMAP.md` | — Pending |
+| Initialize GSD at the EROS workspace root | Cross-repository scope and subproject boundaries need one project-level baseline | ✓ Good (v1.0) |
+| Keep Forge as a subproject, not the EROS roadmap | Forge is build and delivery infrastructure, not the whole robot operating system | ✓ Good (v1.0) |
+| Limit this baseline to scope and traceability | The workspace has no implemented robot runtime or target hardware evidence | ✓ Good (v1.0) |
+| Keep planning artifacts in `agents/planning/` | `.planning/` is owned by the `agents` repository and shared by workspace tooling | ✓ Good (v1.0) |
+| Keep the scope baseline in `agents/planning/SCOPE.md` | One authoritative composition baseline avoids divergent copies in `PROJECT.md`, `REQUIREMENTS.md`, and `ROADMAP.md` | ✓ Good (v1.0) |
+| Use a two-layer 3+2 composition model | Separates deployed robot OS product areas from build and delivery infrastructure | ✓ Good (v1.0) |
+| Keep partial Forge scope in the capability boundary column | Preserves implementation evidence without misclassifying unaccepted scope as an EROS exclusion | ✓ Good (v1.0) |
+| Use a seven-column full traceability chain | Makes requirement, phase, plan, summary, verification, evidence type, and status explicit | ✓ Good (v1.0) |
+| Resolve baseline conflicts by domain authority | Prevents a single document from silently overriding another domain's authority | ✓ Good (v1.0) |
 
 ## Evolution
 
@@ -122,4 +139,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-11-04 after Phase 3*
+*Last updated: 2026-11-04 after v1.0 milestone*
