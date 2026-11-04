@@ -17,8 +17,8 @@ System composition and portability detail is defined in `.planning/SCOPE.md`.
 
 ### Baseline Review
 
-- [ ] **TRACE-01**: Map every v1 requirement to exactly one roadmap phase and record its evidence status.
-- [ ] **REVIEW-01**: Review `PROJECT.md`, `REQUIREMENTS.md`, and `ROADMAP.md` for consistency and record unresolved items.
+- [x] **TRACE-01**: Map every v1 requirement to exactly one roadmap phase and record its evidence status.
+- [x] **REVIEW-01**: Review `PROJECT.md`, `REQUIREMENTS.md`, and `ROADMAP.md` for consistency and record unresolved items.
 
 ## v2 Requirements
 
@@ -64,8 +64,8 @@ Which phases cover which requirements and the evidence chain for each v1 require
 | SCOPE-02 | Phase 2 | `.planning/phases/02-implemented-scope-and-explicit-exclusions/02-01-PLAN.md` | `.planning/phases/02-implemented-scope-and-explicit-exclusions/02-01-SUMMARY.md` | `.planning/phases/02-implemented-scope-and-explicit-exclusions/02-VERIFICATION.md` | Forge implementation inventory | Verified |
 | SCOPE-03 | Phase 2 | `.planning/phases/02-implemented-scope-and-explicit-exclusions/02-01-PLAN.md` | `.planning/phases/02-implemented-scope-and-explicit-exclusions/02-01-SUMMARY.md` | `.planning/phases/02-implemented-scope-and-explicit-exclusions/02-VERIFICATION.md` | Documented exclusions | Verified |
 | SCOPE-04 | Phase 1 | `.planning/phases/01-system-composition-and-portability-boundary/01-01-PLAN.md` | `.planning/phases/01-system-composition-and-portability-boundary/01-01-SUMMARY.md` | `.planning/phases/01-system-composition-and-portability-boundary/01-VERIFICATION.md` | Documented scope | Verified |
-| TRACE-01 | Phase 3 | `.planning/phases/03-baseline-traceability-and-consistency-review/03-01-PLAN.md` | `.planning/phases/03-baseline-traceability-and-consistency-review/03-01-SUMMARY.md` | `.planning/phases/03-baseline-traceability-and-consistency-review/03-VERIFICATION.md` | Review and traceability | In progress |
-| REVIEW-01 | Phase 3 | `.planning/phases/03-baseline-traceability-and-consistency-review/03-01-PLAN.md` | `.planning/phases/03-baseline-traceability-and-consistency-review/03-01-SUMMARY.md` | `.planning/phases/03-baseline-traceability-and-consistency-review/03-VERIFICATION.md` | Review and traceability | In progress |
+| TRACE-01 | Phase 3 | `.planning/phases/03-baseline-traceability-and-consistency-review/03-01-PLAN.md` | `.planning/phases/03-baseline-traceability-and-consistency-review/03-01-SUMMARY.md` | `.planning/phases/03-baseline-traceability-and-consistency-review/03-VERIFICATION.md` | Review and traceability | Verified |
+| REVIEW-01 | Phase 3 | `.planning/phases/03-baseline-traceability-and-consistency-review/03-01-PLAN.md` | `.planning/phases/03-baseline-traceability-and-consistency-review/03-01-SUMMARY.md` | `.planning/phases/03-baseline-traceability-and-consistency-review/03-VERIFICATION.md` | Review and traceability | Verified |
 
 v2 requirements are deferred. They are not part of this v1 traceability table or the v1 coverage count.
 `Verified` means the requirement's deliverable passed its phase `VERIFICATION.md`. It does not mean Forge full acceptance, target ABI compatibility, deployment, or robot-system acceptance.

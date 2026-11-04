@@ -39,13 +39,15 @@ subproject capabilities, not EROS system-level acceptance. -->
   `.planning/SCOPE.md` — Phase 2.
 - ✓ Recorded explicit EROS-scope exclusions with status, reason, and exit
   criterion; see `.planning/SCOPE.md` — Phase 2.
+- ✓ Established requirement-to-phase traceability with the full evidence chain
+  in `.planning/REQUIREMENTS.md` — Phase 3.
+- ✓ Reviewed the baseline planning documents, dispositioned every finding in
+  `.planning/phases/03-baseline-traceability-and-consistency-review/03-REVIEW.md`,
+  and recorded prior-verification impact — Phase 3.
 
 ### Active
 
-- [ ] **TRACE-01**: Establish requirement-to-phase traceability with evidence
-  status for the baseline.
-- [ ] **REVIEW-01**: Review `PROJECT.md`, `REQUIREMENTS.md`, and `ROADMAP.md` for
-  consistency and record unresolved items.
+None — all v1 requirements for this milestone are validated.
 
 ### Out of Scope
 
@@ -120,4 +122,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-11-04 after baseline consistency review*
+*Last updated: 2026-11-04 after Phase 3*
