@@ -50,9 +50,9 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Success Criteria** (what must be TRUE):
   1. Every v1 requirement maps to exactly one roadmap phase, and the traceability table shows no unmapped or duplicate requirement.
   2. Each traceability row records an evidence status that distinguishes documented scope from implemented capability and verified result.
-  3. A recorded review covers PROJECT.md, REQUIREMENTS.md, and ROADMAP.md and lists every inconsistency found or states that none were found.
+  3. A recorded review covers PROJECT.md, REQUIREMENTS.md, ROADMAP.md, and SCOPE.md and lists every inconsistency found or states that none were found.
   4. Every unresolved item from the review is recorded with a disposition, and no item is left without a next action or deferral decision.
-  5. The three documents agree on scope statements, requirement identifiers, and phase assignments after review, or every remaining disagreement is recorded as unresolved.
+  5. The four reviewed documents agree on scope statements, requirement identifiers, and phase assignments after review, or every remaining disagreement is recorded as unresolved.
 **Plans**: 1 plan
 - [ ] `03-01-PLAN.md` — Establish the seven-column v1 traceability chain and complete the four-document baseline consistency review
 

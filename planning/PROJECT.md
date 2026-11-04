@@ -67,8 +67,10 @@ anti-features. -->
 
 - The workspace root is an EROS multi-repository workspace, not an application
   repository.
-- `forge/` is the only subproject with substantial implementation. `agents/` and
-  `documents/` currently contain repository scaffolding.
+- `forge/` is the only subproject with substantial implementation. `agents/`
+  contains the project-level planning baseline in `agents/planning/`, and
+  `documents/` remains repository scaffolding for outward-facing project
+  documentation.
 - The codebase map in `.planning/codebase/` records the implemented Forge
   architecture, conventions, testing, integrations, and concerns.
 - The project-level planning artifacts are owned by the `agents` repository
@@ -118,4 +120,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-11-04 after Phase 2*
+*Last updated: 2026-11-04 after baseline consistency review*
