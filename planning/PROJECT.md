@@ -34,13 +34,14 @@ subproject capabilities, not EROS system-level acceptance. -->
 - ✓ Defined the portability boundary: common source and public APIs where
   practical, platform-specific builds where required, and no guarantee of
   identical binaries across platforms; see `.planning/SCOPE.md` — Phase 1.
+- ✓ Inventoried Forge's implemented capabilities with FR/NFR references,
+  code-plus-document evidence, and explicit implementation boundaries; see
+  `.planning/SCOPE.md` — Phase 2.
+- ✓ Recorded explicit EROS-scope exclusions with status, reason, and exit
+  criterion; see `.planning/SCOPE.md` — Phase 2.
 
 ### Active
 
-- [ ] **SCOPE-02**: Define subproject boundaries, including which capabilities
-  are implemented by Forge and which remain future system scope.
-- [ ] **SCOPE-03**: Record explicit exclusions for this baseline so planned
-  runtime, hardware, firmware, and CI/CD work is not presented as delivered.
 - [ ] **TRACE-01**: Establish requirement-to-phase traceability with evidence
   status for the baseline.
 - [ ] **REVIEW-01**: Review `PROJECT.md`, `REQUIREMENTS.md`, and `ROADMAP.md` for
@@ -117,4 +118,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-11-03 after Phase 1*
+*Last updated: 2026-11-04 after Phase 2*
